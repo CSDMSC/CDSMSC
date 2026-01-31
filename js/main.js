@@ -138,7 +138,7 @@ const App = {
                                 <i class="ph-fill ph-user-circle text-brand-500 text-xl mr-3 mt-0.5"></i>
                                 <span>
                                     <strong class="text-white block">Dr. Debabrata Dansana</strong>
-                                    Dept. of CS, Math & Stats<br>
+                                    Dept. of Computer Science<br>
                                     Rajendra University
                                 </span>
                             </li>
