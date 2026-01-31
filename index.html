@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSDMSC 2026 | National Conference on Computational & Data Sciences</title>
+    <meta name="description" content="National Conference on Computational and Data Sciences (CSDMSC 2026) at Rajendra University, Odisha.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Fira Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0ea5e9',
+                            600: '#0284c7', // Primary Blue
+                            800: '#075985',
+                            900: '#0c4a6e', // Deep Navy
+                        },
+                        track: {
+                            cs: '#0ea5e9',    // Blue
+                            math: '#8b5cf6',  // Purple
+                            stat: '#14b8a6'   // Teal
+                        }
+                    },
+                    backgroundImage: {
+                        // Ensure you have a hero image at this path, or it will use the fallback pattern
+                        'hero-local': "url('assets/images/hero-banner.jpg')",
+                        'hero-fallback': "url('https://www.transparenttextures.com/patterns/cubes.png')",
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .text-gradient {
+            background: linear-gradient(to right, #bae6fd, #7dd3fc, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-900 bg-white pt-20 flex flex-col min-h-screen">
+
+    <div id="navbar-placeholder"></div>
+
+    <section class="relative bg-brand-900 text-white overflow-hidden min-h-[85vh] flex items-center">
+        
+        <div class="absolute inset-0 bg-hero-local bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-hero-fallback opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-900 via-[#0a3556] to-black opacity-95"></div>
+        
+        <div class="absolute top-20 left-20 w-72 h-72 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute bottom-20 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" style="animation-delay: 2s"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="w-full md:w-3/5 text-center md:text-left z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/20 border border-brand-200/30 text-brand-100 text-sm font-semibold tracking-wide mb-6 backdrop-blur-sm">
+                    <i class="ph-bold ph-calendar-blank"></i> Feb 20-21, 2026
+                    <span class="mx-2 text-brand-500">•</span>
+                    <i class="ph-bold ph-map-pin"></i> Balangir, Odisha
+                </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
+                    CSDMSC 2026 <br/>
+                    <span class="text-gradient">
+                        Future of Data Sciences
+                    </span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-brand-100 font-light mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed opacity-90">
+                    National Conference on Computational and Data Sciences in Mathematics, Statistics and Computer Science. Join India's leading minds to bridge theory and application.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="register.html" class="group relative px-8 py-4 bg-brand-600 rounded-lg text-white font-bold text-lg shadow-lg hover:bg-brand-500 transition-all transform hover:-translate-y-1 overflow-hidden ring-1 ring-white/20">
+                        <div class="absolute inset-0 w-full h-full bg-white/20 group-hover:translate-x-full transition-transform duration-500 ease-out -translate-x-full skew-x-12"></div>
+                        <span class="relative flex items-center gap-2">
+                            Register Now <i class="ph-bold ph-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a href="schedule.html" class="px-8 py-4 bg-white/5 border border-white/20 rounded-lg text-white font-medium text-lg hover:bg-white/10 transition-all backdrop-blur-sm">
+                        View Schedule
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden md:block w-full md:w-2/5 z-10 animate-float">
+                <div class="relative bg-gradient-to-tr from-white/10 to-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <div class="flex items-start gap-4 mb-8">
+                        <div class="p-3 bg-brand-600 rounded-xl text-white shadow-lg">
+                            <i class="ph-fill ph-student text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold text-xl">Organized By</h3>
+                            <p class="text-brand-200 text-sm mt-1">Dept. of Computer Science, Mathematics & Statistics</p>
+                            <p class="text-white/60 text-xs font-bold uppercase tracking-wider mt-2">Rajendra University</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-brand-50 text-sm bg-black/20 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
+                            <i class="ph-fill ph-users text-brand-400 text-xl"></i>
+                            <span class="font-medium">400+ Expected Participants</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-brand-50 text-sm bg-black/20 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
+                            <i class="ph-fill ph-microphone-stage text-purple-400 text-xl"></i>
+                            <span class="font-medium">9+ Keynote Speakers</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-brand-50 text-sm bg-black/20 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
+                            <i class="ph-fill ph-presentation-chart text-teal-400 text-xl"></i>
+                            <span class="font-medium">Poster Presentations & Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm">Interdisciplinary Approach</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-900 mt-2">Conference Tracks</h2>
+                <div class="w-20 h-1.5 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-brand-100 group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 bg-brand-50 rounded-xl flex items-center justify-center text-track-cs mb-6 group-hover:bg-track-cs group-hover:text-white transition-colors">
+                        <i class="ph-fill ph-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Computer Science</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4 text-sm">
+                        Focusing on AI, Machine Learning, Cloud Computing, and Network Security architectures.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="ph-bold ph-check text-track-cs mr-2"></i> Computational Intelligence</li>
+                        <li class="flex items-center"><i class="ph-bold ph-check text-track-cs mr-2"></i> Data Mining</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-brand-100 group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-track-math mb-6 group-hover:bg-track-math group-hover:text-white transition-colors">
+                        <i class="ph-fill ph-function text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Mathematics</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4 text-sm">
+                        Exploring theoretical foundations, linear algebra, and mathematical modeling for real-world systems.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="ph-bold ph-check text-track-math mr-2"></i> Numerical Analysis</li>
+                        <li class="flex items-center"><i class="ph-bold ph-check text-track-math mr-2"></i> Optimization Techniques</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-brand-100 group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center text-track-stat mb-6 group-hover:bg-track-stat group-hover:text-white transition-colors">
+                        <i class="ph-fill ph-chart-bar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Statistics</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4 text-sm">
+                        Advanced statistical inference, multivariate analysis, and stochastic processes in data science.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="ph-bold ph-check text-track-stat mr-2"></i> Predictive Analytics</li>
+                        <li class="flex items-center"><i class="ph-bold ph-check text-track-stat mr-2"></i> Big Data Interpretation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-900">Distinguished Speakers</h2>
+                    <p class="text-gray-600 mt-2">Learn from the experts shaping the field.</p>
+                </div>
+                <a href="speakers.html" class="hidden md:inline-flex items-center font-semibold text-brand-600 hover:text-brand-800 transition group">
+                    View All 9 Speakers <i class="ph-bold ph-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="group relative rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 border border-brand-50">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200">
+                        <img src="assets/images/Prof. S K Ugdata.jpg" 
+                             onerror="this.src='https://ui-avatars.com/api/?name=Siba+Udgata&background=0284c7&color=fff&size=512'" 
+                             alt="Prof. Siba K. Udgata" 
+                             class="object-cover w-full h-96 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/95 via-brand-900/40 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">Prof. Siba K. Udgata</h3>
+                        <p class="text-brand-200 text-sm font-medium">University of Hyderabad</p>
+                        <div class="h-1 w-12 bg-track-cs mt-3 rounded-full"></div>
+                        <p class="text-brand-100 text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
+                            Keynote: Wireless Sensor Networks & AI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 border border-brand-50">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200">
+                        <img src="assets/images/Prof. Srinivas Sethi.jpg" 
+                             onerror="this.src='https://ui-avatars.com/api/?name=Srinivas+Sethi&background=10B981&color=fff&size=512'" 
+                             alt="Prof. Srinivas Sethi" 
+                             class="object-cover w-full h-96 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/95 via-brand-900/40 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">Prof. Srinivas Sethi</h3>
+                        <p class="text-brand-200 text-sm font-medium">IGIT, Sarang</p>
+                        <div class="h-1 w-12 bg-track-cs mt-3 rounded-full"></div>
+                        <p class="text-brand-100 text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
+                            Session: Network Security Paradigms
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 border border-brand-50">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200">
+                        <img src="assets/images/Prof. Priya Ranjan Dash.jpg" 
+                             onerror="this.src='https://ui-avatars.com/api/?name=Priya+Dash&background=6366F1&color=fff&size=512'" 
+                             alt="Dr. Priya Ranjan Dash" 
+                             class="object-cover w-full h-96 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/95 via-brand-900/40 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">Dr. Priya Ranjan Dash</h3>
+                        <p class="text-brand-200 text-sm font-medium">Utkal University</p>
+                        <div class="h-1 w-12 bg-track-stat mt-3 rounded-full"></div>
+                        <p class="text-brand-100 text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
+                            Session: Statistical Inference in Big Data
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-10 text-center md:hidden">
+                <a href="speakers.html" class="inline-block px-8 py-3 border border-brand-200 rounded-full text-brand-700 font-bold hover:bg-brand-50 transition shadow-sm">
+                    View All Speakers
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-12 opacity-5">
+            <i class="ph-fill ph-calendar text-9xl"></i>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl font-bold mb-12 text-center">Important Dates</h2>
+            
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row gap-6 items-center bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-md hover:bg-white/10 transition duration-300">
+                    <div class="flex-shrink-0 w-20 h-20 bg-brand-600 rounded-xl flex flex-col items-center justify-center font-bold shadow-lg ring-4 ring-white/10">
+                        <span class="text-xs uppercase opacity-80 mb-1">Feb</span>
+                        <span class="text-3xl leading-none">20</span>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h3 class="text-xl font-bold">Conference Inauguration & Day 1</h3>
+                        <p class="text-brand-200 mt-1">Registration starts at 08:30 AM</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-green-500/20 text-green-300 text-xs font-bold border border-green-500/30 uppercase tracking-wide">
+                            Opening Soon
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-center bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-md hover:bg-white/10 transition duration-300">
+                    <div class="flex-shrink-0 w-20 h-20 bg-purple-600 rounded-xl flex flex-col items-center justify-center font-bold shadow-lg ring-4 ring-white/10">
+                        <span class="text-xs uppercase opacity-80 mb-1">Feb</span>
+                        <span class="text-3xl leading-none">21</span>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h3 class="text-xl font-bold">Technical Sessions & Valedictory</h3>
+                        <p class="text-purple-200 mt-1">Poster Presentations & Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Development check to ensure main.js is loaded
+            if(typeof App === 'undefined') console.error("Error: main.js not loaded. Check file path.");
+        });
+    </script>
+</body>
+</html>

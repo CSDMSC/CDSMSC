@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Theme & Style Guide</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Fira Sans', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#F0F9FF',  /* Lightest Blue */
+                            100: '#E0F2FE',
+                            200: '#BAE6FD',
+                            300: '#7DD3FC',
+                            400: '#38BDF8',
+                            500: '#0EA5E9', /* Primary Blue */
+                            600: '#0284C7', /* Hover Blue */
+                            700: '#0369A1',
+                            800: '#075985',
+                            900: '#0C4A6E', /* Darkest Navy */
+                            accent: '#F59E0B', /* Amber/Warning */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans p-10">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-12 border-b border-gray-200 pb-6">
+            <h1 class="text-4xl font-bold text-brand-900 mb-2">Design System</h1>
+            <p class="text-gray-500">Master reference for NCCDS-2026 website.</p>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-8 h-8 bg-brand-500 rounded-md mr-3 border border-gray-200"></span> Color Palette
+            </h2>
+            
+            <p class="mb-4 text-sm text-gray-500">If these boxes are white/transparent, the config is not loading.</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="space-y-2">
+                    <div class="h-20 bg-brand-50 rounded-lg shadow-sm border border-gray-200 flex items-center justify-center text-xs text-brand-900">50</div>
+                    <div class="text-xs font-mono text-gray-500">bg-brand-50</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="h-20 bg-brand-100 rounded-lg shadow-sm flex items-center justify-center text-xs text-brand-900">100</div>
+                    <div class="text-xs font-mono text-gray-500">bg-brand-100</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="h-20 bg-brand-500 rounded-lg shadow-sm flex items-center justify-center text-xs text-white font-bold ring-2 ring-offset-2 ring-brand-500">500</div>
+                    <div class="text-xs font-mono text-gray-500 font-bold">bg-brand-500 (Primary)</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="h-20 bg-brand-800 rounded-lg shadow-sm flex items-center justify-center text-xs text-white">800</div>
+                    <div class="text-xs font-mono text-gray-500">bg-brand-800</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="h-20 bg-brand-900 rounded-lg shadow-sm flex items-center justify-center text-xs text-white">900</div>
+                    <div class="text-xs font-mono text-gray-500">bg-brand-900</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Components</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <h3 class="text-sm font-bold text-gray-400 uppercase mb-4">Buttons</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-brand-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-brand-700 transition shadow-lg">
+                            Primary Action
+                        </button>
+                        <button class="bg-white border border-brand-200 text-brand-700 px-6 py-2 rounded-lg font-medium hover:bg-brand-50 transition">
+                            Secondary
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <h3 class="text-sm font-bold text-gray-400 uppercase mb-4">Alerts</h3>
+                    <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 text-brand-900">
+                        <strong class="font-bold">Conference Alert:</strong>
+                        <span class="text-brand-700">Registration closes on Feb 15th.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

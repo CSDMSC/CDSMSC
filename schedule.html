@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | CSDMSC 2026</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Fira Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0ea5e9',
+                            600: '#0284c7', // Primary Blue
+                            800: '#075985',
+                            900: '#0c4a6e', // Deep Navy
+                        },
+                        track: {
+                            cs: '#0ea5e9',    // Blue
+                            math: '#8b5cf6',  // Purple
+                            stat: '#14b8a6'   // Teal
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-brand-900 bg-gray-50 pt-20 flex flex-col min-h-screen">
+
+    <div id="navbar-placeholder"></div>
+
+    <header class="bg-brand-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-900 via-[#1e3a8a] to-brand-900 opacity-95"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Program Schedule</h1>
+            <p class="text-brand-100 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+                A two-day journey through the frontiers of Computational and Data Sciences.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex justify-center mb-16" role="tablist">
+                <div class="bg-white p-1.5 rounded-full border border-gray-200 shadow-sm flex">
+                    <button onclick="switchTab('day1')" id="tab-day1" class="px-8 py-3 rounded-full text-sm font-bold transition-all bg-brand-600 text-white shadow-md">
+                        Day 01 • Feb 20
+                    </button>
+                    <button onclick="switchTab('day2')" id="tab-day2" class="px-8 py-3 rounded-full text-sm font-bold transition-all text-gray-500 hover:text-brand-600 hover:bg-brand-50">
+                        Day 02 • Feb 21
+                    </button>
+                </div>
+            </div>
+
+            <div id="day1" class="space-y-8 animate-fade-in">
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-gray-900">08:30 AM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">Registration</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-gray-300 rounded-full mt-2 -translate-x-1.5"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-gray-800">Registration & Inauguration</h3>
+                        <p class="text-gray-500 mt-1">Conference Hall, New Academic Building</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">10:30 AM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">11:30 AM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-cs rounded-full mt-2 -translate-x-1.5 ring-4 ring-brand-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-cs shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-brand-50 text-track-cs text-xs font-bold rounded mb-2">Computer Science</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Srinivas Sethi</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">IGIT, Sarang</p>
+                        <p class="text-gray-500 text-sm">Session covering advanced network security paradigms and algorithmic efficiency.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">11:30 AM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">12:30 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-math rounded-full mt-2 -translate-x-1.5 ring-4 ring-purple-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-math shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-purple-50 text-track-math text-xs font-bold rounded mb-2">Mathematics</span>
+                        <h3 class="text-xl font-bold text-gray-900">Dr. Sk. Safique Ahmad</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">IIT Indore</p>
+                        <p class="text-gray-500 text-sm">Numerical Linear Algebra and its computational applications.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">12:30 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">01:30 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-cs rounded-full mt-2 -translate-x-1.5 ring-4 ring-brand-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-cs shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-brand-50 text-track-cs text-xs font-bold rounded mb-2">Computer Science</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Sanjaya Kumar Panda</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">NIT, Warangal</p>
+                        <p class="text-gray-500 text-sm">Distributed systems and cloud computing architectures.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-gray-400">01:30 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    
+                    <div class="flex-grow bg-gray-100 p-4 rounded-xl border border-dashed border-gray-300 text-center">
+                        <span class="text-gray-500 font-bold uppercase text-sm tracking-wide"><i class="ph-bold ph-coffee"></i> Lunch Break</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">02:30 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">03:30 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-stat rounded-full mt-2 -translate-x-1.5 ring-4 ring-teal-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-stat shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-teal-50 text-track-stat text-xs font-bold rounded mb-2">Statistics</span>
+                        <h3 class="text-xl font-bold text-gray-900">Dr. Priya Ranjan Dash</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">Utkal University</p>
+                        <p class="text-gray-500 text-sm">Statistical Inference in the era of Big Data.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">03:30 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">04:30 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-math rounded-full mt-2 -translate-x-1.5 ring-4 ring-purple-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-math shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-purple-50 text-track-math text-xs font-bold rounded mb-2">Mathematics</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Prasant Chatrjee</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">Visva-Bharati, Santiniketan</p>
+                        <p class="text-gray-500 text-sm">Applied mathematics and complex data modeling.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">04:30 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">05:30 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-gray-800 rounded-full mt-2 -translate-x-1.5 ring-4 ring-gray-100"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-gray-100 text-gray-800 text-xs font-bold rounded mb-2">Industry</span>
+                        <h3 class="text-xl font-bold text-gray-900">Mr. Biswajit Nayak</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">Grid Analytics India Pvt. Ltd.</p>
+                        <p class="text-gray-500 text-sm">Real-world applications of statistical models in business analytics.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-purple-600">Evening</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    
+                    <div class="flex-grow bg-purple-50 p-4 rounded-xl border border-purple-100 text-center">
+                        <span class="text-purple-700 font-bold uppercase text-sm tracking-wide"><i class="ph-bold ph-music-notes"></i> Cultural Program</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="day2" class="space-y-8 animate-fade-in hidden">
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">10:00 AM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">11:00 AM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-cs rounded-full mt-2 -translate-x-1.5 ring-4 ring-brand-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-cs shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-brand-50 text-track-cs text-xs font-bold rounded mb-2">Computer Science</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Siba K. Udgata</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">University of Hyderabad</p>
+                        <p class="text-gray-500 text-sm">Keynote: Computational Intelligence and Wireless Sensor Networks.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">11:00 AM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">12:00 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-cs rounded-full mt-2 -translate-x-1.5 ring-4 ring-brand-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-cs shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-brand-50 text-track-cs text-xs font-bold rounded mb-2">Computer Science</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Satyabrata Das</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">VSSUT, Burla</p>
+                        <p class="text-gray-500 text-sm">Machine Learning applications and practical data science.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">12:00 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">01:00 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-math rounded-full mt-2 -translate-x-1.5 ring-4 ring-purple-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-math shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-purple-50 text-track-math text-xs font-bold rounded mb-2">Mathematics</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Gauranga C. Samanta</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">Fakir Mohan University</p>
+                        <p class="text-gray-500 text-sm">Mathematical modeling of large-scale structures and cosmology.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative group">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">01:00 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">02:00 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-track-stat rounded-full mt-2 -translate-x-1.5 ring-4 ring-teal-50"></div>
+                    
+                    <div class="flex-grow bg-white p-6 rounded-xl border-l-4 border-track-stat shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block px-2 py-1 bg-teal-50 text-track-stat text-xs font-bold rounded mb-2">Statistics</span>
+                        <h3 class="text-xl font-bold text-gray-900">Prof. Monalisha Pattnaik</h3>
+                        <p class="text-sm font-semibold text-gray-600 mb-2">Sambalpur University</p>
+                        <p class="text-gray-500 text-sm">Multivariate statistical analysis and complex dataset interpretation.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-brand-600">01:00 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">04:00 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    <div class="hidden md:flex absolute left-32 ml-6 w-3 h-3 bg-brand-500 rounded-full mt-2 -translate-x-1.5 ring-4 ring-brand-50"></div>
+                    
+                    <div class="flex-grow bg-gradient-to-r from-brand-50 to-white p-6 rounded-xl border border-brand-100 shadow-sm">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="ph-fill ph-presentation-chart text-brand-600 text-xl"></i>
+                            <h3 class="text-xl font-bold text-brand-900">Poster Presentation & Display</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">Interactive session featuring research from participants across all tracks. Three winners will be awarded.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 relative">
+                    <div class="md:w-32 flex-shrink-0 flex flex-col items-center md:items-end">
+                        <span class="text-lg font-bold text-gray-800">04:00 PM</span>
+                        <span class="text-xs font-semibold text-gray-400 uppercase">05:00 PM</span>
+                    </div>
+                    <div class="hidden md:block absolute left-32 top-0 bottom-0 w-px bg-gray-200 ml-6"></div>
+                    
+                    <div class="flex-grow bg-gray-800 text-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold">Valedictory Session</h3>
+                        <p class="text-gray-400 text-sm mt-1">Closing remarks and certificate distribution.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        function switchTab(tabId) {
+            // Hide all
+            document.getElementById('day1').classList.add('hidden');
+            document.getElementById('day2').classList.add('hidden');
+            
+            // Show Selected
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Reset Buttons
+            const btn1 = document.getElementById('tab-day1');
+            const btn2 = document.getElementById('tab-day2');
+            
+            // Base classes
+            const activeClasses = ['bg-brand-600', 'text-white', 'shadow-md'];
+            const inactiveClasses = ['text-gray-500', 'hover:text-brand-600', 'hover:bg-brand-50'];
+
+            if(tabId === 'day1') {
+                btn1.classList.add(...activeClasses);
+                btn1.classList.remove(...inactiveClasses);
+                btn2.classList.remove(...activeClasses);
+                btn2.classList.add(...inactiveClasses);
+            } else {
+                btn2.classList.add(...activeClasses);
+                btn2.classList.remove(...inactiveClasses);
+                btn1.classList.remove(...activeClasses);
+                btn1.classList.add(...inactiveClasses);
+            }
+        }
+    </script>
+
+</body>
+</html>

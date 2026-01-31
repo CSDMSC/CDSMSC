@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | CSDMSC 2026</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Fira Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0ea5e9',
+                            600: '#0284c7', // Primary Blue
+                            800: '#075985',
+                            900: '#0c4a6e', // Deep Navy
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-brand-900 bg-gray-50 pt-20 flex flex-col min-h-screen">
+
+    <div id="navbar-placeholder"></div>
+
+    <header class="bg-brand-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-900 via-[#1e3a8a] to-brand-900 opacity-95"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight">About The Conference</h1>
+            <p class="text-brand-100 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+                Exploring the convergence of Computational Methods and Data Sciences.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg text-gray-600 mx-auto">
+                <h2 class="text-3xl font-bold text-brand-900 mb-6 border-l-4 border-brand-500 pl-4">Concept Note</h2>
+                <p class="leading-relaxed mb-6">
+                    The <strong>National Conference on Computational and Data Sciences in Mathematics, Statistics, and Computer Science (CSDMSC 2026)</strong> aims to provide a comprehensive academic platform for mathematicians, statisticians, computer scientists, and data science professionals to come together and share recent research developments, innovations, and best practices.
+                </p>
+                <p class="leading-relaxed mb-6">
+                    The conference focuses on the growing role of computational methods, data-driven approaches, and quantitative analysis in addressing contemporary scientific and societal challenges. Through keynote lectures, technical sessions, and interactive discussions, CSDMSC 2026 seeks to highlight current trends, emerging challenges, and future directions in mathematics, statistics, computer science, data science, and analytics.
+                </p>
+                <p class="leading-relaxed">
+                    This event also offers an excellent opportunity for young researchers, research scholars, and students to engage with eminent experts, exchange ideas, and gain exposure to interdisciplinary research that bridges theory and real-world applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-900">Conference Objectives</h2>
+                <div class="w-20 h-1.5 bg-brand-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <i class="ph-fill ph-lightbulb text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Promote Innovation</h3>
+                    <p class="text-gray-600 text-sm">To promote research and innovation in computational and data sciences across mathematics, statistics, and computer science.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4">
+                        <i class="ph-fill ph-arrows-merge text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Bridge Theory & Practice</h3>
+                    <p class="text-gray-600 text-sm">To strengthen the integration of theoretical foundations and computational methodologies for practical problem-solving.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-4">
+                        <i class="ph-fill ph-users-three text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Interdisciplinary Collaboration</h3>
+                    <p class="text-gray-600 text-sm">To encourage interdisciplinary collaboration among academicians, researchers, and industry professionals.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-4">
+                        <i class="ph-fill ph-share-network text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Knowledge Network</h3>
+                    <p class="text-gray-600 text-sm">To provide a platform for knowledge dissemination, capacity building, and research networking.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 mb-4">
+                        <i class="ph-fill ph-student text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-900 mb-2">Inspire Future Leaders</h3>
+                    <p class="text-gray-600 text-sm">To inspire young researchers and students toward advanced research and innovation in quantitative and computational sciences.</p>
+                </div>
+                
+                <div class="bg-brand-900 p-8 rounded-xl shadow-sm border border-brand-900 flex flex-col justify-center items-center text-center">
+                    <h3 class="text-xl font-bold text-white mb-2">Join the Discussion</h3>
+                    <p class="text-brand-200 text-sm mb-6">Be a part of this transformative journey.</p>
+                    <a href="register.html" class="px-6 py-2 bg-white text-brand-900 font-bold rounded-full hover:bg-brand-50 transition">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-brand-900 mb-6">Expected Outcomes</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        CSDMSC 2026 aims to deliver tangible value to the academic and scientific community through high-quality interactions and publications.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-green-500 text-xl mr-3 mt-0.5"></i>
+                            <span class="text-gray-700 text-sm">Enhanced understanding of computational and data-driven approaches in mathematics and statistics.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-green-500 text-xl mr-3 mt-0.5"></i>
+                            <span class="text-gray-700 text-sm">Strengthening of research culture and interdisciplinary collaboration.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-green-500 text-xl mr-3 mt-0.5"></i>
+                            <span class="text-gray-700 text-sm">Generation of high-quality research outputs, including conference papers and future journal publications.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-green-500 text-xl mr-3 mt-0.5"></i>
+                            <span class="text-gray-700 text-sm">Creation of academic and professional networks among faculty members, researchers, and industry experts.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform md:rotate-3 hover:rotate-0 transition duration-500">
+                        <div class="bg-gradient-to-br from-brand-600 to-brand-900 h-80 flex items-center justify-center text-white p-8 text-center">
+                            <div>
+                                <i class="ph-duotone ph-chart-polar text-6xl mb-4 opacity-80"></i>
+                                <h3 class="text-2xl font-bold">Bridging Theory & Application</h3>
+                                <p class="text-brand-200 mt-2">Feb 20-21, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
